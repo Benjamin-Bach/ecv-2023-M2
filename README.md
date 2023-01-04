@@ -14,7 +14,11 @@ Objectifs :
 ## Consignes
 
 L'exercice porte exclusivement sur l'intégration.
+
 Au premier cours, vous disposez d'un brief initial, publié en tant que ticket, au sein même de ce dépôt.
+
 Je distribuerai les assets nécessaires au fur et à mesure (templates HTML, images, eventuellement wireframes...) afin que vous puissiez vous concentrer exclusivement sur les CSS et le JS.
+
 **Le design ne doit pas faire débat, ce n'est pas l'objet de ce cours. La demande sera très simple et très stricte, elle sera precisée dans le brief initial.**
+
 Avant chaque court, une nouvelle demande (ou une demande de modification) sera formulée par le client et les assets correspondants seront livrés via les tickets GitHub
