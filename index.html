@@ -7,10 +7,98 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/app.js"></script>
-    <title>Document</title>
+    <title>Code&lt;&sol;&gt;Paper</title> <!-- cf: https://html.com/character-codes/ -->
 </head>
 <body>
 
+    <!-- Main part -->
+    <main>
+
+        <!-- Main menu -->
+        <nav>
+            <div id="toogleMenu"></div>
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section hero -->
+        <section>
+            
+            <!-- Responsive image -->
+            <picture>
+                <source srcset="assets/images/hero-w1800.jpg" media="(min-width:1201px)">
+                <source srcset="assets/images/hero-w1200.jpg" media="(min-width:481px)">
+                <img src="assets/images/hero-w480.jpg" alt="Paper Code">
+            </picture>
+
+            <!-- Text overlay -->
+            <article>
+                <h1>Code<span>&lt;&sol;&gt;</span>Paper</h1>
+                <a href="#">S'abonner</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+        </section>
+
+        <!-- Section Intro -->
+        <section>
+            <h2>Des articles de qualité, chaque mois.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium expedita quae, in tenetur nesciunt sapiente eveniet quos nihil quod unde maiores natus eum facere ratione fugiat sed explicabo cumque.</p>
+        </section>
+
+        <!-- Section Form -->
+        <section>
+            <article>
+                <form action="https://duckduckgo.com">
+
+                    <!-- First name -->
+                    <span>
+                        <label>Prénom</label>
+                        <input type="text" name="q" placeholder="Votre prénom">
+                    </span>
+
+                    <!-- Last name -->
+                    <span>
+                        <label>Prénom</label>    
+                        <input type="text" name="LastName" placeholder="Votre nom">
+                    </span>
+
+                    <!-- Mail -->
+                    <label>e-Mail</label>
+                    <input type="text" name="LastName" placeholder="Votre e-mail">
+
+                    <input type="checkbox" name="legals" id="legals">
+                    <label for="legals">J'ai lu et j'accepte les mentions légales</label>
+                    <button type="submit" formaction="other-url">Partager</button>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Socials menu -->
+        <ul>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+
+        <!-- Legal menu -->
+        <ul>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </footer>
     
 </body>
 </html>
