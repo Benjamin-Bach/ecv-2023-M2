@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" defer></script>
     <title>Code&lt;&sol;&gt;Paper</title> <!-- cf: https://html.com/character-codes/ -->
 </head>
 <body>
@@ -56,25 +56,35 @@
                 <form action="https://duckduckgo.com">
 
                     <!-- First name -->
-                    <span>
+                    <div>
                         <label>Prénom</label>
                         <input type="text" name="q" placeholder="Votre prénom">
-                    </span>
+                    </div>
 
                     <!-- Last name -->
-                    <span>
-                        <label>Prénom</label>    
+                    <div>
+                        <label>Nom</label>    
                         <input type="text" name="LastName" placeholder="Votre nom">
-                    </span>
+                    </div>
 
                     <!-- Mail -->
-                    <label>e-Mail</label>
-                    <input type="text" name="LastName" placeholder="Votre e-mail">
+                    <div>    
+                        <label>e-Mail</label>
+                        <input type="email" name="LastName" placeholder="Votre e-mail">
+                    </div>
 
-                    <input type="checkbox" name="legals" id="legals">
-                    <label for="legals">J'ai lu et j'accepte les mentions légales</label>
-                    <button type="submit" formaction="other-url">Partager</button>
-                    <button type="submit">S'abonner</button>
+                    <!-- Legals -->
+                    <div>
+                        <input type="checkbox" name="legals" id="legals">
+                        <label for="legals">J'ai lu et j'accepte les mentions légales</label>
+                    </div>
+
+                    <!-- Actions -->
+                    <div>
+                        <button type="submit" formaction="other-url">Partager</button>
+                        <button type="submit">S'abonner</button>
+                    </div>
+
                 </form>
             </article>
         </section>
@@ -86,9 +96,9 @@
 
         <!-- Socials menu -->
         <ul>
-            <li><a href="#"><img src="" alt=""></a></li>
-            <li><a href="#"><img src="" alt=""></a></li>
-            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="assets/images/instagram.svg" alt="instagram"></a></li>
         </ul>
 
         <!-- Legal menu -->
