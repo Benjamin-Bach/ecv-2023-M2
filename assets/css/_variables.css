@@ -1,0 +1,13 @@
+:root {
+    --unit: 16px;
+    --lineHeight: 1.4em;
+}
+
+@media (min-width: 1600px) {
+
+    :root {
+        --unit: 24px;
+        --lineHeight: 2em;
+    }
+
+}
