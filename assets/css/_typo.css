@@ -17,12 +17,14 @@ Utilisez par contre des em pour les margins des fonts, qui seront toujours calcu
 
 html{
     font-size: var(--unit);
+    background-color: var(--lightColor);
 }
 
 body{
     font-family: Inter;
     font-weight: 300;
     line-height:var(--lineHeight);
+    color: var(--darkColor);
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, label{
@@ -48,7 +50,7 @@ ul{
 }
 li{
     list-style-type:disc;
-    margin- bottom: 1em;
+    margin-bottom: 1em;
 }
 li li{
     list-style-type: circle;
@@ -56,6 +58,12 @@ li li{
 
 ul ul{
     margin-bottom: 0;
+}
+a{
+    color: var(--secondaryColor);
+}
+a:hover, a:active{
+    color: var(--darkColor);
 }
 
 /*
@@ -76,7 +84,7 @@ ul.list-custom li::before{
     background-image: url('/assets/images/checkmark2.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 1em;
+    height: 1hem;
     width: 1em;
     margin-right: .5em;
 }
