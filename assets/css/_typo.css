@@ -6,6 +6,13 @@
     deux graisses par exemple)
 */
 
+/* 
+
+Tips : Utilisez des rem pour les font-size, vous aurez moins de surprises et plus de contrôle.
+Utilisez par contre des em pour les margins des fonts, qui seront toujours calculés en fonction de la taille de la font elle-même
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 html{
@@ -18,7 +25,7 @@ body{
     line-height:var(--lineHeight);
 }
 
-h1, h2, h3, h4, h5, h6, p, li, label{
+h1, h2, h3, h4, h5, h6, p, ul, label{
     margin-bottom: var(--lineHeight);
 }
 
@@ -34,4 +41,42 @@ h2{
 
 p{
     font-size: 1rem;
+}
+
+ul{
+    padding-left: 1em;
+}
+li{
+    list-style-type:disc;
+    margin- bottom: 1em;
+}
+li li{
+    list-style-type: circle;
+}
+
+ul ul{
+    margin-bottom: 0;
+}
+
+/*
+exemple d'une déclinaison du composant UL,
+basée sur l'utilisation d'une image à la place des puces standards
+*/
+
+ul.list-custom{
+    padding-left: 0em;
+}
+ul.list-custom li{
+    list-style-type: none;
+}
+
+ul.list-custom li::before{
+    content: '';
+    display: inline-block;
+    background-image: url('/assets/images/checkmark2.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1em;
+    width: 1em;
+    margin-right: .5em;
 }
