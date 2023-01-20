@@ -20,3 +20,13 @@ img{
     top: 50%;
     transform: translateY(-50%);
 }
+
+.hero-image .text-overlay.text-bottom{
+    top: unset;
+    bottom: calc(var(--unit) * 2);
+    transform: unset;
+}
+
+.hero-image .text-overlay.text-bottom :last-child{
+    margin-bottom: 0;
+}

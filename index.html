@@ -36,7 +36,7 @@
             </picture>
 
             <!-- Text overlay -->
-            <article class="text-overlay">
+            <article class="text-overlay text-bottom">
                 <h1 class="color-secondary">Code<span>&lt;&sol;&gt;</span>Paper</h1>
                 <a href="#">S'abonner</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -53,34 +53,34 @@
         <!-- Section Form -->
         <section>
             <article>
-                <form action="https://duckduckgo.com">
+                <form class="flex-container" action="https://duckduckgo.com">
 
                     <!-- First name -->
-                    <div>
+                    <div class="col-33">
                         <label>Prénom</label>
                         <input type="text" name="q" placeholder="Votre prénom">
                     </div>
 
                     <!-- Last name -->
-                    <div>
+                    <div class="col-33">
                         <label>Nom</label>    
                         <input type="text" name="LastName" placeholder="Votre nom">
                     </div>
 
                     <!-- Mail -->
-                    <div>    
+                    <div class="col-33">    
                         <label>e-Mail</label>
                         <input type="email" name="LastName" placeholder="Votre e-mail">
                     </div>
 
                     <!-- Legals -->
-                    <div>
+                    <div class="col-auto">
                         <input type="checkbox" name="legals" id="legals">
                         <label for="legals">J'ai lu et j'accepte les mentions légales</label>
                     </div>
 
                     <!-- Actions -->
-                    <div>
+                    <div class="col-100">
                         <button type="submit" formaction="other-url">Partager</button>
                         <button type="submit">S'abonner</button>
                     </div>
