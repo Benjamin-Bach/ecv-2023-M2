@@ -5,6 +5,7 @@
 @import url('_flex.css');
 @import url('_menu.css');
 @import url('_space.css');
+@import url('_form.css');
 
 *{
     box-sizing: border-box;

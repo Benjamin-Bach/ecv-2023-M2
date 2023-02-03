@@ -38,7 +38,7 @@
             <!-- Text overlay -->
             <div class="content-wrapper">
 
-                <article class="text-overlay text-bottom">
+                <article class="text-overlay text-bottom p-2">
                     <h1 class="color-secondary">Code<span>&lt;&sol;&gt;</span>Paper</h1>
                     <a href="#">S'abonner</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -48,46 +48,100 @@
         </section>
 
         <!-- Section Intro -->
-        <section class="content-wrapper">
+        <section class="content-wrapper p-2">
             <h2>Des articles de qualité, chaque mois.</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium expedita quae, in tenetur nesciunt sapiente eveniet quos nihil quod unde maiores natus eum facere ratione fugiat sed explicabo cumque.</p>
         </section>
 
         <!-- Section Form -->
-        <section class="content-wrapper">
-            <article>
-                <form class="flex-container" action="https://duckduckgo.com">
+        <section class="content-wrapper p-2">
+            <input id="choice" type="checkbox"/><label>M'abonner au format digital uniquement</label>
+            <article class="form-1">
+                <form id="mainForm" action="https://duckduckgo.com">
 
                     <!-- First name -->
-                    <div class="col-33">
+                    <div>
                         <label>Prénom</label>
                         <input type="text" name="q" placeholder="Votre prénom">
                     </div>
 
                     <!-- Last name -->
-                    <div class="col-33">
+                    <div>
                         <label>Nom</label>    
                         <input type="text" name="LastName" placeholder="Votre nom">
                     </div>
 
                     <!-- Mail -->
-                    <div class="col-33">    
+                    <div>    
                         <label>e-Mail</label>
                         <input type="email" name="LastName" placeholder="Votre e-mail">
                     </div>
 
+                    <!-- Adresse -->
+                    <div>
+                        <label>Adresse</label>
+                        <input type="text" name="address" placeholder="Votre adresse">
+                    </div>
+
+                    <!-- Last name -->
+                    <div>
+                        <label>Code postal</label>
+                        <input type="number" min="0" max="99999" step="1" name="postal-code" placeholder="Votre code postal">
+                    </div>
+
+                    <!-- Last name -->
+                    <div>
+                        <label>Ville</label>
+                        <input type="text" name="city" placeholder="Votre ville">
+                    </div>
+
                     <!-- Legals -->
-                    <div class="col-auto">
+                    <div>
                         <input type="checkbox" name="legals" id="legals">
                         <label for="legals">J'ai lu et j'accepte les mentions légales</label>
                     </div>
 
                     <!-- Actions -->
-                    <div class="col-100">
+                    <div>
                         <button type="submit" formaction="other-url">Partager</button>
                         <button type="submit">S'abonner</button>
                     </div>
 
+                </form>
+            </article>
+            <article class="form-2">
+                <form id="otherForm" action="https://duckduckgo.com">
+            
+                    <!-- First name -->
+                    <div>
+                        <label>Prénom</label>
+                        <input type="text" name="q" placeholder="Votre prénom">
+                    </div>
+            
+                    <!-- Last name -->
+                    <div>
+                        <label>Nom</label>
+                        <input type="text" name="LastName" placeholder="Votre nom">
+                    </div>
+            
+                    <!-- Mail -->
+                    <div>
+                        <label>e-Mail</label>
+                        <input type="email" name="LastName" placeholder="Votre e-mail">
+                    </div>
+            
+                    <!-- Legals -->
+                    <div>
+                        <input type="checkbox" name="legals" id="legals">
+                        <label for="legals">J'ai lu et j'accepte les mentions légales</label>
+                    </div>
+            
+                    <!-- Actions -->
+                    <div>
+                        <button type="submit" formaction="other-url">Partager</button>
+                        <button type="submit">S'abonner</button>
+                    </div>
+            
                 </form>
             </article>
         </section>
@@ -95,7 +149,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark">
+    <footer class="bg-dark p-2">
 
         <!-- Socials menu -->
         <ul class="content-wrapper">
