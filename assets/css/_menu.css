@@ -5,8 +5,10 @@
     top: 0px;
     right: 0px;
     width: 100%;
+    max-width: 480px;
     height: 100vh;
     transition: all .3s;
+    padding: var(--unit);
 }
 
 .main-menu.close{
@@ -21,4 +23,17 @@
     position: fixed;
     right: 0;
     cursor: pointer;
+}
+
+@media (min-width:1024px){
+
+    .main-menu{
+        position: sticky;
+        height: unset;
+        max-width: unset;
+    }
+
+    .main-menu .toggle-menu{
+        display: none;
+    }
 }
