@@ -15,6 +15,13 @@ img{
     position: relative;
 }
 
+.hero-image img{
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: 0 40%;
+}
+
 .hero-image .text-overlay{
     position: absolute;
     top: 50%;

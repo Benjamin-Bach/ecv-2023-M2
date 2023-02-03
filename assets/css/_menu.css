@@ -36,4 +36,8 @@
     .main-menu .toggle-menu{
         display: none;
     }
+
+    .main-menu ul{
+        display: flex;
+    }
 }
